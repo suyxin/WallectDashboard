@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">WalletDashboard</string>
+
+    <string name="currency_format">%1$.2f %2$s</string>
+    <string name="usd_format">$%1$.2f</string>
 </resources>

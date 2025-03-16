@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundAngleFrameLayout">
+        <attr name="raRadius" format="dimension" />
+        <attr name="raTopLeftRadius" format="dimension" />
+        <attr name="raTopRightRadius" format="dimension" />
+        <attr name="raBottomLeftRadius" format="dimension" />
+        <attr name="raBottomRightRadius" format="dimension" />
+    </declare-styleable>
+</resources>

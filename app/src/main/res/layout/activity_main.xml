@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"   xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/topbg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:background="#3F64B5"
+            android:layout_height="250dp"/>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@+id/topbg"
+            app:layout_constraintStart_toStartOf="@+id/topbg"
+            app:layout_constraintEnd_toEndOf="@id/topbg"
+            app:layout_constraintBottom_toBottomOf="@id/topbg"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvWalletSumUsdValue"
+            tools:text="$99.99USD"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <com.onchain.walletdashboard.baseui.RoundAngleFrameLayout
+            app:layout_constraintTop_toBottomOf="@id/topbg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:raTopLeftRadius="16dp"
+            app:raTopRightRadius="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false" />
+        </com.onchain.walletdashboard.baseui.RoundAngleFrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
